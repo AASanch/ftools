@@ -31,7 +31,7 @@ namespace stickercalc
                     Console.WriteLine($"");
 
                     Console.Write("PE Ratio:  ");
-                    var peRatio = int.Parse(Console.ReadLine());
+                    var peRatio = double.Parse(Console.ReadLine());
                     var futurePrice = futureEps * peRatio;
                     Console.WriteLine($"");
                     Console.WriteLine($"Future Price = {futurePrice.ToString("N")}");
