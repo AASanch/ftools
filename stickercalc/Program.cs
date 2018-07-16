@@ -27,7 +27,7 @@ namespace stickercalc
                     var futureEps = Calc.FutureValue(epsTtm, epsGR, 9);
                     Console.WriteLine($"");
                     Console.WriteLine($"Future EPS (10 yrs) = {futureEps.ToString("N")}");
-                    Console.WriteLine($"Default PE Ratio = {(futureEps * 2).ToString("N")}");
+                    Console.WriteLine($"Default PE Ratio = {((epsGR * 100) * 2).ToString("N")}");
                     Console.WriteLine($"");
 
                     Console.Write("PE Ratio:  ");
